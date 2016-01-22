@@ -28,7 +28,6 @@
     "babel-eslint": "^5.0.0-beta6",
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.4.3",
-    "check-types": "^6.0.0",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^3.1.0"
   },
