@@ -1,0 +1,6 @@
+.babelrc
+.editorconfig
+.eslintrc
+.travis.yml
+src
+test
