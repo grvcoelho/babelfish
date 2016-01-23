@@ -5,7 +5,7 @@ const en = {
 		'1 apple',
 		'%s apples'
 	],
-	'RANDOM_FRUIT': function() {
+	'RANDOM_FRUIT': function getRandomFruit() {
 		return 'banana';
 	}
 };
@@ -17,7 +17,7 @@ const pt = {
 		'1 maçã',
 		'%s maçãs'
 	],
-	'RANDOM_FRUIT': function() {
+	'RANDOM_FRUIT': function getRandomFruit() {
 		return 'banana';
 	}
 };
@@ -29,7 +29,7 @@ const fr = {
 		'1 pomme',
 		'%s pommes'
 	],
-	'RANDOM_FRUIT': function() {
+	'RANDOM_FRUIT': function getRandomFruit() {
 		return 'banane';
 	}
 };
