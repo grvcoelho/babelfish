@@ -9,8 +9,9 @@
 	"rules": {
 		"indent": [2, "tab"],
 		"quotes": [2, "single"],
+		"quote-props": 0,
 		"linebreak-style": [2, "unix"],
 		"semi": [2, "always"],
-		"comma-dangle": [2, "never"]
+		"comma-dangle": [2, "never"],
 	}
 }
