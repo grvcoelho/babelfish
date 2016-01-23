@@ -3,7 +3,7 @@ const en = {
 	'APPLE': [
 		'No apples',
 		'1 apple',
-		'%s apple'
+		'%s apples'
 	]
 };
 
