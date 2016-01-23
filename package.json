@@ -2,7 +2,7 @@
   "name": "spokesman",
   "version": "0.1.0",
   "description": "Straightforward library for translations and i18n",
-  "main": "lib/index.js",
+  "main": "lib/spokesman.js",
   "scripts": {
     "test": "nyc ava",
 	"prepublish": "npm run build",
