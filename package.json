@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "nyc ava",
+	"prepublish": "npm run build",
+	"build": "babel src --out-dir lib",
     "coverage": "npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src/**/*.js test/**/*.js"
   },
