@@ -1,24 +1,34 @@
 const en = {
-	'SERVER_ERROR': 'There has been an error',
-	'NOTIFICATIONS': [
-		'No notifications',
-		'1 notification',
-		'%s notifications'
+	'FRUIT_LIST': 'List of fruits',
+	'APPLE': [
+		'No apples',
+		'1 apple',
+		'%s apple'
 	]
 };
 
 const pt = {
-	'SERVER_ERROR': 'Houve um erro',
-	'NOTIFICATIONS': [
-		'Nenhuma notifação',
-		'1 notificação',
-		'%s notificações'
+	'FRUIT_LIST': 'Lista de frutas',
+	'APPLE': [
+		'Nenhuma maçã',
+		'1 maçã',
+		'%s maçãs'
+	]
+};
+
+const fr = {
+	'FRUIT_LIST': 'Liste de fruits',
+	'APPLE': [
+		'Sans pommes',
+		'1 pomme',
+		'%s pommes'
 	]
 };
 
 const dictionaries = {
-	'pt-BR': pt,
-	'en-US': en
+	pt,
+	en,
+	fr
 };
 
 export default dictionaries;
