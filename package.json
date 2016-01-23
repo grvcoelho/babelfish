@@ -1,12 +1,12 @@
 {
   "name": "spokesman",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Straightforward library for translations and i18n",
   "main": "lib/spokesman.js",
   "scripts": {
     "test": "nyc ava",
-	"prepublish": "npm run build",
-	"build": "babel src --out-dir lib",
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib",
     "coverage": "npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src/**/*.js test/**/*.js"
   },
