@@ -80,6 +80,7 @@ spokesman.addDictionary('pt', {
 
 spokesman.useDictionary('pt');
 
+spokesman.translate('APPLE'); // if no count is passed, 1 is the default. "1 maçã" 
 spokesman.translate('APPLE', 0); // "Sem maçãs"
 spokesman.translate('APPLE', 1); // "1 maçã"
 spokesman.translate('APPLE', 2); // "2 maçãs"
