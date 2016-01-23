@@ -29,6 +29,40 @@ class Spokesman {
 
 		this.currentDictionary = this.dictionaries[name];
 	}
+
+	translate(term, count = 1) {
+		const dictionary = this.currentDictionary;
+		const translation = dictionary[term];
+
+		if (is.undefined(translation)) {
+			return term;
+		}
+
+		if (is.function(translation)) {
+			return translation();
+		}
+
+		if (is.array(translation)) {
+			return this.translateWithPluralisation(term, count);
+		}
+
+		return translation;
+	}
+
+	translateWithPluralisation(term, count) {
+		const dictionary = this.currentDictionary;
+		const translations = dictionary[term];
+
+		if (count === 0) {
+			return translations[0];
+		}
+
+		if (count === 1) {
+			return translations[1];
+		}
+
+		return translations[2].replace('%s', count);
+	}
 }
 
 export default Spokesman;
