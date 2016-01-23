@@ -3,6 +3,7 @@ import is from 'check-types';
 class Spokesman {
 	constructor(dictionaries = {}) {
 		this.dictionaries = dictionaries;
+		this.currentDictionary = {};
 	}
 
 	addDictionary(name, dictionary) {
@@ -19,6 +20,14 @@ class Spokesman {
 		}
 
 		this.dictionaries[name] = dictionary;
+	}
+
+	useDictionary(name) {
+		if (is.undefined(this.dictionaries[name])) {
+			throw new Error('The dictionary does not exist');
+		}
+
+		this.currentDictionary = this.dictionaries[name];
 	}
 }
 

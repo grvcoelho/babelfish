@@ -9,6 +9,7 @@ test('constructor', t => {
 	const spokesman = new Spokesman(dictionaries);
 
 	t.ok(is.object(spokesman.dictionaries));
+	t.ok(is.object(spokesman.currentDictionary));
 });
 
 test('add a dictionary', t => {
@@ -16,7 +17,6 @@ test('add a dictionary', t => {
 	const fr = { 'SUGAR': 'Sucre' };
 
 	spokesman.addDictionary('fr-CA', fr);
-
 	t.is(spokesman.dictionaries['fr-CA'], fr);
 });
 
@@ -39,4 +39,17 @@ test('add a dictionary without a valid dictionary', t => {
 	const fr = [1, 2];
 
 	t.throws(() => spokesman.addDictionary('fr-CA', fr));
+});
+
+test('use a dictionary', t => {
+	const spokesman = new Spokesman(dictionaries);
+
+	spokesman.useDictionary('pt-BR');
+	t.is(spokesman.currentDictionary, dictionaries['pt-BR']);
+});
+
+test('use a dictionary that does not exist', t => {
+	const spokesman = new Spokesman(dictionaries);
+
+	t.throws(() => spokesman.useDictionary('en-UK'));
 });
