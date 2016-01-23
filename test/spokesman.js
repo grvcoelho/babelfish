@@ -72,6 +72,7 @@ test('translate a term with pluralisation', t => {
 	t.is(spokesman.translate('APPLE', 2), '2 apples');
 	t.is(spokesman.translate('APPLE', 17), '17 apples');
 });
+
 test('translate a term with function', t => {
 	spokesman.useDictionary('en');
 
