@@ -4,7 +4,10 @@ const en = {
 		'No apples',
 		'1 apple',
 		'%s apples'
-	]
+	],
+	'RANDOM_FRUIT': function() {
+		return 'banana';
+	}
 };
 
 const pt = {
@@ -13,7 +16,10 @@ const pt = {
 		'Nenhuma maçã',
 		'1 maçã',
 		'%s maçãs'
-	]
+	],
+	'RANDOM_FRUIT': function() {
+		return 'banana';
+	}
 };
 
 const fr = {
@@ -22,7 +28,10 @@ const fr = {
 		'Sans pommes',
 		'1 pomme',
 		'%s pommes'
-	]
+	],
+	'RANDOM_FRUIT': function() {
+		return 'banane';
+	}
 };
 
 const dictionaries = {

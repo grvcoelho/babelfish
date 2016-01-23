@@ -38,6 +38,10 @@ class Spokesman {
 			return term;
 		}
 
+		if (is.function(translation)) {
+			return translation();
+		}
+
 		if (is.array(translation)) {
 			return this.translateWithPluralisation(term, count);
 		}
