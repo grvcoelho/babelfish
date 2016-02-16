@@ -1,6 +1,6 @@
 {
   "name": "spokesman",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Straightforward library for translations and i18n",
   "main": "lib/spokesman.js",
   "scripts": {
