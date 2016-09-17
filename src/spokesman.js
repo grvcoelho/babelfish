@@ -1,6 +1,6 @@
 import is from 'check-types';
 
-class Spokesman {
+class Babelfish {
 	constructor(dictionaries = {}) {
 		this.dictionaries = dictionaries;
 		this.currentDictionary = {};
@@ -65,4 +65,4 @@ class Spokesman {
 	}
 }
 
-export default Spokesman;
+export default Babelfish;

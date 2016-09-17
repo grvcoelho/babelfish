@@ -1,8 +1,8 @@
 {
-  "name": "spokesman",
+  "name": "@grvcoelho/babelfish",
   "version": "1.1.0",
   "description": "Straightforward library for translations and i18n",
-  "main": "lib/spokesman.js",
+  "main": "lib/babelfish.js",
   "scripts": {
     "test": "nyc ava",
     "prepublish": "npm run build",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grvcoelho/spokesman.git"
+    "url": "git+https://github.com/grvcoelho/babelfish.git"
   },
   "keywords": [
     "i18n",
@@ -22,9 +22,9 @@
   "author": "Guilherme Rv Coelho <@grvcoelho>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grvcoelho/spokesman/issues"
+    "url": "https://github.com/grvcoelho/babelfish/issues"
   },
-  "homepage": "https://github.com/grvcoelho/spokesman#readme",
+  "homepage": "https://github.com/grvcoelho/babelfish#readme",
   "devDependencies": {
     "ava": "^0.10.0",
     "babel-cli": "^6.4.5",
